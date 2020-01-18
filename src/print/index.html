@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>lagrandebellezza</title>
+  <style>
+    body {
+      margin: 0mm 0mm 0mm 15mm;
+    }
+
+    #image {
+      display: none;
+    }
+
+    .img-print {
+      display: inline-block;
+    }
+
+    .img-print.H {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      /* float: right; */
+    }
+
+    .img-print.B {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 80%;
+      float: right;
+    }
+
+    .img-print.F {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 80%;
+      float: right;
+    }
+
+    .img-print.E {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 80%;
+      float: right;
+    }
+
+    .img-print.D {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 80%;
+      float: right;
+    }
+
+    .img-print.K {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 100%;
+      float: right;
+    }
+
+    .img-print.J {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 100%;
+      float: right;
+    }
+
+    .img-print.O {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      width: 20%;
+      float: right;
+    }
+
+    .img-print.N {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      /* width: 100%; */
+      float: right;
+      page-break-before: always;
+    }
+
+    .img-print.M {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      /* width: 100%; */
+      float: right;
+      page-break-before: always;
+    }
+
+    .img-print.I {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-top: 70px;
+      /* width: 100%; */
+      float: right;
+      /* page-break-before: always; */
+    }
+
+    .THEGREATBEAUTY {
+      display: none;
+
+    }
+
+    .LAGRANDEBELLEZZA {
+      display: none;
+    }
+
+    #Script {
+      display: inherit;
+    }
+
+    /* #repere{
+  position:fixed;
+  margin-top: 300px;
+  margin-right: 800px;
+  font-size: 20px;
+  font-family: 'larish_neuesemibold';
+
+} */
+
+
+    h1 {
+      font-family: 'larish_neuesemibold';
+      font-size: 200px;
+      line-height: 100%;
+      page-break-after: always;
+      page-break-before: always;
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    h2 {
+      font-family: 'larish_neuesemibold';
+      font-size: 100px;
+      line-height: 100%;
+      page-break-after: always;
+      text-align: center;
+      margin-top: 300px;
+    }
+
+
+    h3 {
+      font-family: 'larish_neuesemibold';
+      font-size: 30px;
+      /* font-style: italic; */
+      line-height: 100%;
+      page-break-after: always;
+      page-break-before: always;
+      text-align: left;
+      margin-top: 480px;
+      margin-left: 240px;
+      /* margin-right: 200px; */
+    }
+
+    h4 {
+      font-family: 'larish_neuesemibold';
+      font-size: 40px;
+      /* font-style: italic; */
+      line-height: 100%;
+      writing-mode: vertical-rl;
+      text-orientation: sideways-right;
+      margin-left: 200px;
+      /* position:fixed; */
+
+    }
+
+    h5 {
+      font-family: 'larish_neuesemibold';
+      font-size: 35px;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    h6 {
+      font-family: 'larish_neuesemibold';
+      font-size: 200px;
+      line-height: 100%;
+      page-break-before: always;
+      page-break-before: always;
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    h7 {
+      font-family: 'larish_neuesemibold';
+      font-size: 20px;
+      line-height: 100%;
+      /* margin-left: 200px; */
+      float: right;
+      text-align: left;
+      writing-mode: vertical-rl;
+      text-orientation: sideways-left;
+      transform: rotate(180deg);
+
+      /* page-break-before: always; */
+    }
+
+    /* p {
+    font-family: 'larish_neuesemibold';
+    font-size: 60px;
+    font-style: italic; */
+    /*  line-height: 100%;
+    page-break-after: always;
+    text-align: left;
+  } */
+
+    i.italique {
+      font-style: italic;
+    }
+
+    .quote {
+      font-family: 'larish_neuesemibold';
+      font-size: 70px;
+      line-height: 90%;
+      float: left;
+      page-break-before: always;
+    }
+
+    .left {
+      font-family: 'larish_neuesemibold';
+      font-size: 70px;
+      line-height: 100%;
+      text-align: left;
+    }
+
+    .left1 {
+      font-family: 'larish_neuesemibold';
+      font-size: 70px;
+      line-height: 100%;
+      text-align: left;
+      page-break-before: always;
+    }
+
+    .right {
+      font-family: 'larish_neuesemibold';
+      font-size: 70px;
+      line-height: 100%;
+      text-align: right;
+    }
+
+    .right1 {
+      font-family: 'larish_neuesemibold';
+      font-size: 70px;
+      line-height: 100%;
+      text-align: right;
+      page-break-before: always;
+    }
+
+    .big {
+      font-family: 'larish_neuesemibold';
+      font-size: 130px;
+      line-height: 100%;
+      text-align: left;
+      page-break-after: always;
+      page-break-before: always;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="image">
+    <img class="A" src="img/1.jpg" />
+    <img class="B" src="img/2.jpg" />
+    <img class="C" src="img/3.jpg" />
+    <img class="H" src="img/8.jpg" />
+    <img class="F" src="img/6.jpg" />
+    <img class="G" src="img/7.jpg" />
+    <img class="E" src="img/5.jpg" />
+    <img class="D" src="img/4.jpg" />
+    <img class="I" src="img/9.jpg" />
+    <img class="J" src="img/10.jpg" />
+    <img class="K" src="img/11.jpg" />
+    <img class="L" src="img/12.jpg" />
+    <img class="M" src="img/14.jpg" />
+    <img class="N" src="img/17.jpg" />
+    <img class="O" src="img/18.jpg" />
+
+  </div>
+
+  <div class="LAGRANDEBELLEZZA">
+    <form> <input id="impression" name="impression" type="button" onclick="LA_GRANDE_BELLEZZA()"
+        value="LA GRANDE BELLEZZA" />
+    </form>
+  </div>
+
+  <div class="THEGREATBEAUTY">
+    <form> <input id="impression" name="impression" type="button" onclick="THE_GREAT_BEAUTY()"
+        value="THE GREAT BEAUTY" />
+    </form>
+  </div>
+
+
+
+  <div id="Script">
+
+    <h5>After his 61th birthday, Jep Gambardella,
+      <br>
+      an aging intellectual and one-time writer,
+      <br>
+      decides to dedicate his life to the search
+      <br>
+      of a meaning.
+      <br>
+      On the background of a mysterious and
+      <br>
+      wonderful Rome,our main character slowly
+      <br>
+      rediscovers beauty under the monotonous,
+      <br>
+      empty shell of a lifetime between sinners.
+      <br>
+      Following a boring night spent between
+      <br>
+      the sheets of a boring and egocentric rich
+      <br>
+      woman from Milan, Jep decides to stick on
+      <br>
+      a quieter quality of life, but several, casual,
+      <br>
+      meetings will force him to reconsider his
+      <br>
+      priorities.
+      <br>
+      A stripper on the verge of breakdown,
+      <br>
+      the ex-husband of his first love, a bizarre
+      <br>
+      magician and a living Saint from a far away
+      <br>
+      reality, will soon allow Jep to discover
+      <br>
+      his own, personal, <i class="italique">Great Beauty.</i></h5>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h7>Original title: La Grande Bellezza
+      <br>
+      Screenplay by Paolo Sorrentino and Umberto Contarello
+      <br>
+      Story by Paolo Sorrentino</h7>
+
+    <h6> THE GREAT BEAUTY </h6>
+    <h1>Paolo</h1>
+    <h1>Sorrentino</h1>
+    <h1>Movie
+      (2013)</h1>
+    <h1>Script</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Travel is useful,
+      it exercises the imagination.
+      <br>
+      All the rest
+      is disappointment and fatigue.
+      <br>
+      Our journey is entirely imaginary.
+      </br>
+      That is its strength.
+      It goes from life to death.
+      </br>
+      People, animals, cities, things,
+      all are imagined.
+      </br>
+      It’s a novel,
+      just a fictitious narrative.
+      And besides,
+      </br>
+      anyone can do as much. You just have
+      </br>
+      to close your eyes. It’s on the other side of life.
+      <br>
+      <br>
+      Louis-Ferdinand Celine
+
+      <p></p>
+    </h3>
+
+
+    <!-- <p class="quote">Journey to the End of the Night Fire!You’re a real pain in the ass! Enough!</p> -->
+
+
+    <div class="paragraphe">
+      <p class="quote">Journey to the End of the Night.</p>
+      <br>
+      <br>
+      <p class="left"> You’re a real pain in the ass!</p>
+      <p class="right"> Enough!
+        They even have cocktails
+        with cherries. Remember?</p>
+      <p class="left"> Hey, jerks!
+        I’ll screw you!
+        I’ll screw you!</p>
+      <p class="right"> Have you seen Ermanno?</p>
+      <p class="left"> I’ll screw you! Now!
+        <p class="right"> Get lost!
+          What the hell are you doing?
+          My phone’s been stolen!
+          I’m starring in two TV dramas...
+          I’m playing a Pope in one,
+          and a junkie on the road to recovery
+          in the other.</p>
+        <p class="left">Impressive!
+          No theatre work?
+          I’m supposed to do
+          Shakespeare with Pietro, but...
+          it has to be at least
+          three hours long,
+          be an ambitious project,
+          and no more small cities!
+          I’m trying to write a piece
+          for theatre, and the concept is...</p>
+        <p class="right"> What about you?</p>
+        <p class="left">I might give up acting.</p>
+        <p class="right">In this shitty country there are
+          never any good female roles.
+          I’ll write my first novel,
+          a Proust-style piece.</p>
+        <p class="left">Really?
+          Proust is my favourite writer!
+          Along with Ammaniti...</p>
+        <p class="right">What a coincidence.</p>
+        <p class="left">Who is that woman?
+          Don’t you recognise her?</p>
+        <p class="right">It’s Lorena.</p>
+        <p class="left">Who?</p>
+        <p class="right">An ex TV showgirl, now in
+          full physical and mental decline.</p>
+        <p class="left">Never seen her! But then
+          I’ve never had a television.
+          Viola, I know you don’t have one.
+          You tell me all the time.</p>
+        <p class="right"> What does she do now?</p>
+        <p class="left">Nothing, of course.</p>
+        <p class="right">Happy birthday, Jep!
+          Happy birthday, Rome!
+          La Colita!</p>
+        <img class="img-print N" src="img/17.jpg" />
+        <p class="left1">To this question, as kids,
+          my friends always gave
+          the same answer...
+          pussy.
+          Whereas I answered...
+          the smell of old
+          people’s houses.
+          The question was:
+          «What do you like most, really,
+          in life?»</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="big">I was destined for sensibility.
+          <br>
+          I was destined to become a writer.
+          <br>
+          I was destined to become <br>
+          Jep Gambardella.</p>
+        <p class="right">You paid no attention
+          to me tonight!
+          Romano, don’t start moaning,
+          we’re not an item.</p>
+        <p class="left"> You liked that guy?</p>
+        <p class="right"> I like everyone and no one.
+          But I wonder why you’re always
+          with me when it’s no one’s turn.</p>
+        <p class="left">Will you take me to the airport?</p>
+        <p class="right">Sure. What time are you leaving?</p>
+        <p class="left">In three hours.</p>
+        <p class="right">Three hours?
+          Then I should crash on your sofa...
+          Go home, I need to pack
+          and I don’t want anyone around.</p>
+        <p class="left">But I live miles away.</p>
+        <p class="right">See you at 8:00.
+          Goodnight.</p>
+        <p class="left">Guys?
+          <br>
+          Guys?
+          <br>
+          Children!
+          <br>
+          Run along!
+          <br>
+          Catellani?<br>
+          The best, of course.
+          Did Catellani the tailor
+          make your suit?
+          There was no doubt
+          about Malagna’s shady intentions.
+          The girl should be rescued
+          at any cost, without loss of time.
+          Sir, you drank!
+          Just enough to forget
+          my birthday.</p>
+        <p class="right">You want infusion?</p>
+        <p class="left">Heavens, no!</p>
+        <p class="right">I got you a present.</p>
+        <p class="left">How sweet!
+          This is a lucky charm
+          from my country.
+          Good thing it’s lucky,
+          because it’s pretty ugly.
+          Keep it on your bedside
+          and stop complaining!
+          <p class="right">I will! And thanks.
+            Wake me up at 15:00, you rascal.</p>
+          <p class="left">You’re funny when you call me that!</p>
+          <p class="right">I don’t love you!</p>
+          <p class="left">Brilliant!</p>
+          <p class="right">Did you enjoy the performance?</p>
+          <p class="left">Parts of it.
+            That violent head-butt
+            made me understand many things.</p>
+          <p class="right">Let’s start from the beginning.</p>
+          <p class="left">Or the end?
+            You know, Talia Concept
+            loves to provoke.
+            Don’t bother, there are more
+            important things than provoking me.
+            And this habit of speaking
+            in the third person is unbearable.
+            What are you reading?
+            <p class="right">I don’t need to read, I live
+              on vibrations, extra-sensory ones.
+              Extra-sensoriality aside.</p>
+            <p class="left">What do you mean by vibrations?</p>
+            <p class="right">The poetry of vibrations cannot
+              be described
+              with the vulgarity of words.</p>
+            <p class="left">Well, try at least.</p>
+            <p class="right">I’m an artist,
+              I don’t need to explain jack shit.
+              So I’ll write: «Lives on vibrations,
+              but she doesn’t know what they are.»
+              I’m starting to dislike
+              this interview.</p>
+            <p class="left">I sense conflictuality in you.</p>
+            <p class="right">Conflictuality as a vibration?</p>
+            <p class="left">As a pain in the ass.
+              Let’s talk about my mom’s
+              abusive boyfriend.
+              <p class="right"> No! I want to know
+                what a vibration is.
+                It’s my radar to intercept
+                the world.</p>
+              <p class="left">Your radar... meaning?</p>
+              <p class="right">You’re a pain in the ass.
+                We got off to a bad start...
+                Talia Concept wants to be
+                interviewed by your paper,
+                it has many readers.
+                But you’re biased.</p>
+              <img class="img-print F" src="img/6.jpg" />
+              <p class="right1">Write about how she has sex
+                with her fianc 11 times a day,
+                he’s a talented conceptual artist,
+                he covers basketballs with confetti!
+                He’s sensational!
+                <p class="left">Talia Concept is talking about
+                  things that are meaningless to me.
+                  All I’ve heard
+                  is unpublishable fluff.</p>
+                <p class="right">You can’t charm me
+                  with things like:
+                  «I’m an artist,
+                  I don’t need to explain».
+                  Our paper has a core
+                  of cultured readers
+                  that don’t want to be taken
+                  for fools. I work for that core.</p>
+                <p class="left">So let me talk about my eventful,
+                  difficult but necessary
+                  journey as an artist!
+                  Necessary for who?
+                  For heaven’s sake, madam,
+                  what is a vibration?</p>
+                <p class="right">I don’t know.</p>
+                <p class="left">You don’t know.
+                  You are an obsessive jerk!
+                  I’ll tell your editor to send me
+                  a journalist of a higher stature.
+                  <p class="right">A piece of advice:
+                    when you speak to my editor,
+                    go easy on the stature business.
+                    She’s a dwarf, you know.
+                    Jep, this interview is a hoot!</p>
+                  <p class="left">Maybe, but don’t send me
+                    to interview someone
+                    who head-butts walls again.</p>
+                  <p class="right">You know what the trick is?</p>
+                  <p class="left">Foam rubber.
+                    Amateur dramatics isn’t dead.</p>
+                  <p class="right">Did you get offended
+                    about the stature comment?</p>
+                  <p class="left">Don’t be silly!
+                    That’s the funniest bit!
+                    I’m a dwarf, it’s no secret.
+                    It’s the first and last thing
+                    everyone says about me.</p>
+                  <p class="right">You’re a spectacular woman, Dadina.
+                    You’ve had the career you deserve.
+                    But you haven’t had the career
+                    you deserve.</p>
+                  <p class="left">Maybe I don’t have much to say...</p>
+                  <p class="right">Bullshit, you’re lazy.
+                    You never leave Rome.
+                    Go to Giglio to do that report
+                    on the Concordia.</p>
+                  <p class="left">I’ve asked you to do 50 times.
+                    Re-heated rice is always tastier
+                    than freshly cooked rice.
+                    The old is better than the new.
+                    Plans tonight, chrie?
+                    As the great De Blasi,
+                    my predecessor, said:</p>
+                  <p class="right">«Tonight I’ll do two things,
+                    eat soup and have a shag.»</p>
+                  <p class="left">Two things that contradict
+                    each other.
+                    That’s what I’d say too,
+                    and she’d reply, in a serious tone:</p>
+                  <p class="right">«No, Dadina, they don’t,
+                    because they’re both hot.»</p>
+                  <p class="left">There’s a publishing house
+                    in Ancona, it’s not that small,
+                    they want an interview book
+                    about you.
+                    Another interview book?
+                    We’re obsessed with interviews!
+                    Can’t you hear them?</p>
+                  <p class="right">«As I always say»</p>
+                  <p class="left">... to who?
+                    Forget it!
+                    And honestly,
+                    who’ll buy a book called:</p>
+                  <p class="right">«Visions and revisions.
+                    Jep Gambardella’s Galaxy»?</p>
+                  <p class="left">It’s a serious title!
+                    Unfortunately in this country,
+                    in order to be taken seriously,
+                    you have to take yourself seriously.
+                    I only wrote one novel, 40 years ago.
+                    Impossible to find too...
+                    Bullshit, «The Human Apparatus»
+                    was a masterpiece!
+                    It even won the... what was it?</p>
+                  <p class="right">The Bancarella prize.</p>
+                  <p class="left">Shit, the Bancarella prize!
+                    You’re very kind, but forget it...
+                    it’d be too pompous.
+                    I can’t, you’ll put me
+                    in an awkward position.
+                    I’ve agreed and I’ve even accepted
+                    an advance...</p>
+                  <p class="right">How much?</p>
+                  <p class="left">1,500 euros.
+                    <p class="right">Give it back,
+                      I’ll give you 1,500 euros.
+                      By the way,
+                      I spoke to the theatre people.
+                      They’ll give you three nights
+                      but you pay for the lights.
+                      Who cares about that!</p>
+                    <p class="left">Jep, this is great news.
+                      It’s really great news.</p>
+                    <p class="right">Thank you!</p>
+                    <p class="left">Are you still up?</p>
+                    <p class="right">It’s time to go to bed.</p>
+                    <p class="right">That’s Viola Bartoli,
+                      Bartoli’s widow.
+                      The guy who was killed,
+                      the actual Bartoli.
+                      Viola has a 50 metre yacht
+                      that belonged to Himmler, the Nazi.
+                      You know what I call Viola?</p>
+                    <p class="right">No, what?</p>
+                    <p class="left">«To-good-to-poo».</p>
+                    <p class="right">I don’t understand.</p>
+                    <p class="left">Because she’s pernickety.
+                      Usually pernickety people don’t poo.
+                      When I introduced Trumeau
+                      to my family, my father said:
+                      «Miss, before marrying my son,
+                      have you ever seen him poo?»</p>
+                    <img class="img-print E" src="img/5.jpg" />
+                    <p class="right1">How gross!</p>
+                    <p class="left">It’s not as bad as you think.
+                      Actually, my wife and I are the only
+                      couple in Italy who are in love.
+                      Orietta, watch out for Lello.
+                      <p class="right">Yes, I know.
+                        He’s the world’s greatest salesman,
+                        he cons everyone.</p>
+                      <p class="left">In no time he’ll get you to spend
+                        every penny
+                        on whatever he’s selling.
+                        You always flatter me.
+                        Just because I express myself well
+                        doesn’t mean I’m always working!</p>
+                      <p class="right">What do you do?</p>
+                      <p class="left">I sell toys.
+                        Not just in a shop,
+                        he’s a wholesaler on a global scale,
+                        he even sells to the Chinese!
+                        What about him?
+                        Don’t you know him?</p>
+                      <p class="right">Sebastiano Paf,
+                        perhaps Italy’s greatest poet.
+                        He wrote: «Up with life,
+                        down with reminiscence.»</p>
+                      <p class="left">He’s on the Dukan Diet,
+                        so Dadina won’t leave him.
+                        Is he with her?</p>
+                      <p class="right">He is, but she...</p>
+                      <p class="left">Like at high school.
+                        Why doesn’t he ever talk?
+                        Because he listens.</p>
+                      <p class="right">Stop sniffing up with your nose?</p>
+                      <p class="left">Bugger off.
+                        Jep’s found a theatre for me.
+                        Do you want the lead role?
+                        I’m no longer an actress,
+                        I’m a writer now.
+                        Maybe...
+                        Maybe I’ll direct a film.</p>
+                      <p class="right">Viola, darling!</p>
+                      <p class="left">Help me, I’m worried about my son.</p>
+                      <p class="right">What can I do?</p>
+                      <p class="left">Why don’t you talk to him?
+                        You always say you’re good
+                        with strangers...
+                        That’s the problem, I’m too good.</p>
+                      <p class="right">Is he seeing a therapist?</p>
+                      <p class="left">Yes, but he wants to stop going.
+                        Take him to a psychiatrist, they’re
+                        pragmatic: Ativan, Prozac and so on.
+                        That stuff makes him feel worse.
+                        <p class="right">Relax, he’s always been odd,
+                          he is what he is.
+                          By the way, have you tried
+                          this rascal’s endive quiche?</p>
+                        <p class="left">It’s the first time she’s made it
+                          and it’s better than my mom’s,
+                          please, you must try some!
+                          You changed your hair colour.
+                          I feel Pirandello-esque lately...</p>
+                        <p class="right">Great jazz, no?</p>
+                        <p class="left">Not really.
+                          The Ethiopian jazz scene is the only
+                          interesting one today.
+                          I’m from Milan, to be honest...
+                          I find Romans...
+                          unbearable!
+                          The best people in Rome
+                          are the tourists.
+                          Take Italy...
+                          <p class="right">What are we famous for overseas?</p>
+                          <p class="left">Fashion and pizza.
+                            A country of weavers and grocers.
+                            How can someone who sells toys,
+                            bringing joy to the world,
+                            be such a pessimist
+                            and a defeatist? You’re dark.</p>
+                          <p class="right">Dark?</p>
+                          <p class="left">Yes.
+                            I heard Gisella Montanelli
+                            went to loans sharks
+                            to pay her hairdressing debts.
+                            <p class="right">Jep says I’m dark!</p>
+                            <p class="left">Gisella’s really sunk that low?
+                              Rome is the only city in the world
+                              where Marxism has truly existed.
+                              You can’t excel over others
+                              for more than a week,
+                              you’re immediately brought back
+                              to mediocrity.</p>
+                            <img class="img-print D" src="img/4.jpg" />
+                            <p class="right1">Rome is pure collectivism.
+                              Pure collectivism.
+                              Stefania, what utter nonsense!
+                              Do you know that Flaubert wanted
+                              to write a book about nothing?
+                              <p class="left">If he’d met you, we’d have had
+                                a great book, what a shame!</p>
+                              <p class="right">You’re a misogynist.</p>
+                              <p class="left">It’s not all about you, I’m not
+                                a misogynist, I’m a misanthropist.
+                                When hate’s involved,
+                                one must aim high.</p>
+                              <p class="right">You’re a dark man.</p>
+                              <p class="left">I’m a transparent person,
+                                without a doubt!</p>
+                              <p class="right">Lello!
+                                Aren’t you stopping tonight?
+                                Mom!</p>
+                              <p class="left">When I see you I blush!
+                                Andrea...</p>
+                              <p class="right">You’re crazy.</p>
+                              <p class="left">No, mom, I’m not crazy!
+                                I’ve got problems.</p>
+                              <p class="right">«As the light flashed,
+                                love sat down in the corner.
+                                Shy and distracted as it was.
+                                This is why
+                                we could tolerate life no longer.»</p>
+                              <p class="left">Gosh,
+                                no one’s quoted me for years!
+                                I read your book as a teenager,
+                                I’ve never forgotten the end.
+                                <p class="right">Stop right there, you’re stroking
+                                  my ego in a dangerous way.</p>
+                                <p class="left">You must’ve been deeply in love
+                                  when you wrote it.
+                                  Moravia made the same comment,
+                                  more or less.
+                                  Even though he worded it
+                                  a bit better.
+                                  I once saw Piazza Navona
+                                  covered in snow.</p>
+                                <p class="right">Really? What was it like?</p>
+                                <p class="left">White!
+                                  When I come to Rome I live there.
+                                  Deep in the outskirts...</p>
+                                <p class="right">What job you do?</p>
+                                <p class="left">Me? I’m rich.</p>
+                                <p class="right">Great job.
+                                  You didn’t enjoy it.</p>
+                                <p class="left">I know I’m not very good.</p>
+                                <p class="right">Why do you say that?
+                                  Plus it’s so sad being good,
+                                  you risk becoming deft.
+                                  It didn’t seem like you cared much.
+                                  You’re very beautiful, Orietta,
+                                  very, very, very beautiful.
+                                  I take photos, you know.
+                                  Of myself.
+                                  At all times of the day,
+                                  to get to know myself.</p>
+                                <p class="left">With the self-timer,
+                                  with my phone... </p>
+                                <p class="right">Interesting.
+                                  My Facebook friends say
+                                  I take great photos.
+                                  I bet there are some of you naked...</p>
+                                <p class="left">A few.</p>
+                                <p class="right">I knew it!
+                                  Do you want to see them?</p>
+                                <p class="left">Of course.</p>
+                                <p class="right">I’ll get my computer.
+                                  The most important thing I discovered
+                                  a few days after turning 65
+                                  is that I can’t waste any more time
+                                  doing things I don’t want to do.
+                                  <p class="left">When I came to Rome,
+                                    at the age of 26,
+                                    I fell pretty swiftly,
+                                    almost without realizing it,
+                                    into what might be defined
+                                    as the whirlpool of the high life.
+                                    But I didn’t just want to live
+                                    the high life.
+                                    <p class="right">Sacconi should be in charge.</p>
+                                    <p class="left">Antonini’s a fucking pain
+                                      in the ass!
+                                      I wanted to be
+                                      the king of the high life.
+                                      And I succeeded.</p>
+                                    <img class="img-print K" src="img/11.jpg" />
+                                    <p class="right1">I didn’t just want
+                                      to go to parties.
+                                      I wanted to have
+                                      the power to make them a failure.</p>
+                                    <p class="left">Gambardella?
+                                      Sorry for showing up like this,
+                                      without warning...</p>
+                                    <p class="right">I’m Alfredo Marti.</p>
+                                    <p class="left">Nice to meet you, I’m Jep,
+                                      but my house is this one.</p>
+                                    <p class="right">I don’t want to bother you.
+                                      How can I help you?</p>
+                                    <p class="left">I’m Elisa De Santis’ husband.
+                                      Did you have children?</p>
+                                    <p class="right">No.
+                                      I couldn’t.
+                                      But I could.
+                                      I could.
+                                      I’m sorry.
+                                      Forgive me.
+                                      She could too.
+                                      Elisa died.
+                                      Yesterday.</p>
+                                    <p class="left">Alfredo, if you need anything,
+                                      you know where I live.</p>
+                                    <p class="right">Don’t leave me alone, please.
+                                      Don’t leave me.
+                                      We were married for 35 years...
+                                      but Elisa always loved you.</p>
+                                    <p class="left">What are you saying?
+                                      Elisa and I went out together
+                                      when we were kids.
+                                      She left me, I think,
+                                      it was so long ago I don’t remember.</p>
+                                    <p class="right">Yes, she left you.
+                                      On September 8th, 1970.
+                                      Exactly...
+                                      You’re distraught now,
+                                      that’s normal.
+                                      I’m not distraught.
+                                      Elisa only ever loved one man.
+                                      <br>
+                                      You.</p>
+                                    <p class="left">How can you say that?
+                                      I never saw Elisa again,
+                                      you were together for a lifetime!</p>
+                                    <p class="right">I found a diary of hers,
+                                      with a lock.
+                                      And I broke the lock off.</p>
+                                    <p class="left">I write for a living, believe me...
+                                      when you write, you give life
+                                      to fantasies, imagination, lies...
+                                      I was only a good companion.
+                                      That’s all she wrote about me.
+                                      35 years together...
+                                      and I’m mentioned in two lines
+                                      as a good companion.
+                                      Here, Alfredo.
+                                      What’ll you do now?</p>
+                                    <p class="right">What I’ve always done.
+                                      I’ll live in adoration of her.</p>
+                                    <p class="left">What’s he doing?
+                                      Stop!
+                                      Jep!
+                                      Well done!
+                                      He made it!</p>
+                                    <p class="right">Have you seen my daughter?</p>
+                                    <p class="left">Your daughter? No.
+                                      Francesca!
+                                      Who are you?
+                                      Who am I?</p>
+                                    <p class="right">I am...</p>
+                                    <p class="left">No, you’re nobody.</p>
+                                    <p class="right">Nobody?
+                                      But I...</p>
+                                    <p class="left">Francesca, where on earth are you?
+                                      I’ve been looking for you
+                                      for over an hour!</p>
+                                    <p class="right">Are you sad, sir?</p>
+                                    <p class="left">No.
+                                      Sir is strange.
+                                      I don’t like that,
+                                      I prefer you to be sad.</p>
+                                    <p class="right">Are you going to bed?</p>
+                                    <p class="left">Last night I went to bed at 22:30.
+                                      Now I don’t know what to do.
+                                      Morning is an unknown object to me.
+                                      Unknown.
+                                      Sir can help me clean
+                                      the house then.</p>
+                                    <p class="right">Sir can’t, sir feels strange.</p>
+                                    <p class="left">Sir is a rascal.</p>
+                                    <p class="right">«Is there a new nation struggling
+                                      within the walls of the city?
+                                      From the crevices of that soil
+                                      a feverish vapour ascends like smoke
+                                      and works like a magic philtre
+                                      in the blood of some men
+                                      producing a form of heroic madness
+                                      unlike any other.»</p>
+                                    <p class="left">What do you think? Shit,
+                                      it’s powerful, don’t you think?
+                                      Why the hell do an adaptation
+                                      of D’Annunzio for the stage?
+                                      D’Annunzio has always been
+                                      paradigmatic...</p>
+                                    <p class="right">You think that certain
+                                      intellectual feats give you dignity,
+                                      and that others are better than you,
+                                      but you’re wrong!</p>
+                                    <p class="left">Try and write something of your own,
+                                      like...
+                                      a feeling, or sorrow...</p>
+                                    <p class="right">I’ve known you ages
+                                      but you’ve never been here.
+                                      Don’t get big-headed, you’ve got
+                                      a room in a student flat...</p>
+                                    <p class="left">Are you going out with that
+                                      gloomy girl you’re always with?</p>
+                                    <p class="right">I wish!
+                                      I’ve tried it on 7,000 times.
+                                      I’ve never even had a kiss,
+                                      not one!</p>
+                                    <p class="left">She’s a bitch.</p>
+                                    <p class="right">No, she’s not.</p>
+                                    <p class="left">She’s complicated.</p>
+                                    <p class="right">She’s a bitch.
+                                      Trust me, you’re too kind.
+                                      I can tell her type from a mile off,
+                                      I don’t even need to meet them.</p>
+                                    <p class="left">What are you doing with that hat?</p>
+                                    <p class="right">My morning exercise.</p>
+                                    <p class="left">That’s exercise?</p>
+                                    <p class="right">Yes!
+                                      <br>
+                                      <br>
+                                      Do you know how many women
+                                      you’ve been with?</p>
+                                    <p class="left">No, I’m rubbish at maths.
+                                      I’ve always been good at maths.
+                                      It’s six, I introduced you to them.
+                                      Seven.</p>
+                                    <p class="right">- Seven?</p>
+                                    <p class="left">Seven.</p>
+                                    <p class="right">When did number seven happen?</p>
+                                    <p class="left">Last summer.
+                                      A friend of my sister’s back home
+                                      when I went to see my folks.
+                                      She runs a shop...</p>
+                                    <p class="right">She’s nice.</p>
+                                    <p class="left">That means she’s a dog.
+                                      What about you and Orietta?</p>
+                                    <p class="right">Who’s Orietta?</p>
+                                    <p class="left">Don’t you know?
+                                      She was at your house...
+                                      A real beauty.
+                                      At my age, a beauty isn’t enough.
+                                      I might take up writing again.</p>
+                                    <p class="right">That’s great news!</p>
+                                    <p class="left">Has something happened?</p>
+                                    <p class="right">Why?</p>
+                                    <p class="left">You want to write again after all
+                                      these years, something’s happened.
+                                      Something always happens in Rome.</p>
+                                    <p class="right">Nothing’s happened.</p>
+                                    <p class="left">What are you looking at?</p>
+                                    <img class="img-print J" src="img/10.jpg" />
+                                    <p class="right1">Come here.</p>
+                                    <p class="left">They met at university
+                                      10 days ago.
+                                      They haven’t stopped kissing
+                                      for 10 days.</p>
+                                    <p class="right">This generation of youths
+                                      horrifies me.
+                                      Supported by this state for years,
+                                      when they realise they’re smart,
+                                      they go study or work in America
+                                      or London,forgetting about the support.</p>
+                                    <p class="left">They have no civil vocation.
+                                      As a young girl,
+                                      in the occupied arts department,
+                                      I oozed civil vocation.</p>
+                                    <p class="right">Is that so?</p>
+                                    <p class="left">Yes, why?</p>
+                                    <p class="right">Come off it...</p>
+                                    <p class="left">What do you know?</p>
+                                    <p class="right">In those years you were in Naples
+                                      being a loafer with posh girls
+                                      and writing your only novelette.</p>
+                                    <p class="left">I didn’t notice that history
+                                      was being made.</p>
+                                    <p class="right">Novelette? It was a masterpiece
+                                      of Italian literature!</p>
+                                    <p class="left">I confirm that Jep and civil
+                                      vocation never got along,
+                                      he was lazy and the other
+                                      hyperactive.</p>
+                                    <p class="right">Romano, stop sucking up to your
+                                      idol, you’re pathetic!
+                                      «The Human Apparatus»
+                                      was a narrow-minded, frivolous book
+                                      and pretentious too, like its title.
+                                      Jep knows that.</p>
+                                    <p class="left">That’s why he stopped there.</p>
+                                    <p class="right">Sorry, what about you then?</p>
+                                    <p class="left">I tried changing things
+                                      with literature.
+                                      I wrote 11 novels, and a book about
+                                      the Party’s official history.</p>
+                                    <p class="right">You’re forgetting your contribution
+                                      to that reality show...
+                                      «Girl Farm».</p>
+                                    <p class="left">Television can be
+                                      a very formative experience!</p>
+                                    <p class="right">I always go when I’m invited.
+                                      I get my hands dirty,
+                                      I try things...
+                                      I don’t spend my life being a snob.</p>
+                                    <p class="left">Are you saying that a socially
+                                      committed writer is advantaged,
+                                      and safeguarded,
+                                      compared to a novelist
+                                      who deals with, how can I say...
+                                      with feelings?</p>
+                                    <p class="right">Of course she is!
+                                      The cause someone commits
+                                      their life to isn’t secondary.
+                                      Like creating a family,
+                                      dedicating oneself with sacrifice
+                                      to raising one’s children day
+                                      after day.
+                                      Eusebio and I have four children,
+                                      we plan the future together.
+                                      I work hard
+                                      to be both a mother and a woman,
+                                      but at the end of the day I feel
+                                      I’ve done something important.</p>
+                                    <p class="left">So if we don’t have children
+                                      we should contemplate
+                                      the idea of suicide?</p>
+                                    <p class="right">I don’t mean you, of course.</p>
+                                    <p class="left">She means me.
+                                      Dadina, I admire you greatly.</p>
+                                    <p class="right">You’re a badass.</p>
+                                    <p class="left">Do you use «badass»
+                                      in any of your 11 novels?</p>
+                                    <p class="right">Yes, I do, I try to be modern.</p>
+                                    <p class="left">Modernity is badass.</p>
+                                    <p class="right">De gustibus.
+                                      What great conviction!
+                                      Should I envy you or be repelled?</p>
+                                    <p class="left">Yes, I have convictions.
+                                      I’m 53...</p>
+                                    <p class="right">You’d never know.</p>
+                                    <p class="left">Never.x
+                                      I’m 53, I’ve suffered,
+                                      I bounced back,
+                                      and learned lots about life.</p>
+                                    <p class="right">Well, I can see you have nothing
+                                      to say, at last.
+                                      I was drinking...
+                                      As we care about you,
+                                      we don’t want to embarrass you.
+                                      You know, all this boastful talk,
+                                      all this serious ostentatiousness,
+                                      all this ego...</p>
+                                    <p class="left">These harsh damning judgments
+                                      of yours
+                                      hide a certain fragility,
+                                      a feeling of inadequacy
+                                      and above all a series of untruths.
+                                      We care about you, we know you.
+                                      We also know our untruths
+                                      and for this, unlike you,
+                                      we end up talking about nonsense,
+                                      about trivial matters,
+                                      because we don’t want
+                                      to revel in our pettiness.</p>
+                                    <p class="right">What untruths
+                                      are you talking about?
+                                      Everything I said is true,
+                                      it’s what I am, what I believe in.</p>
+                                    <p class="left">Please, I’m a gentleman.
+                                      Don’t destroy my only certainty.</p>
+                                    <p class="right">Tell me exactly what my lies are
+                                      and what my fragility is!
+                                      I’m a woman with balls, tell me!</p>
+                                    <p class="left">«Woman with balls» would be too much
+                                      for any gentleman.
+                                      All right, Stefania,
+                                      you asked for it. In random order:
+                                      Your civil vocation during
+                                      your student days went unnoticed.
+                                      But another vocation of yours
+                                      is remembered by many,
+                                      the one practiced by you then,
+                                      in the university toilets.</p>
+                                    <p class="right">You wrote about the Party because
+                                      you were its leader’s mistress.
+                                      And your 11 novels,
+                                      published by a small publishing
+                                      house subsidized by the Party,
+                                      reviewed by minor Party-affiliated
+                                      newspapers,
+                                      are insignificant,
+                                      everyone says so.</p>
+                                    <p class="left">I’m not saying my novelette
+                                      was any better,
+                                      I agree with you there.
+                                      Your relationship with Eusebio...
+                                      What relationship? Eusebio
+                                      loves Giordano, everyone knows.
+                                      He has for years.</p>
+                                    <p class="right">They lunch every day
+                                      at Arnaldo’s, under the coat rack,
+                                      like sweethearts under an oak tree.</p>
+                                    <p class="left">You all know but turn a blind eye.
+                                      Your dedication to your children,
+                                      with all the sacrifices entailed...
+                                      You work all week in TV,
+                                      you go out every night,
+                                      even on Mondays, when popper
+                                      dealers don’t even venture out.
+                                      You’re never with your children,
+                                      not even on the
+                                      long holidays you take.
+                                      And plus you have a butler,
+                                      a waiter,
+                                      a cook, a chauffeur
+                                      who drives the kids to school,
+                                      three babysitters, so...
+                                      how and when exactly
+                                      do you make any sacrifices?</p>
+                                    <p class="right">These are the untruths and fragility
+                                      I’m talking about.
+                                      Stefania, mother and woman.
+                                      You’re 53, with a life in tatters,
+                                      like the rest of us.
+                                      Instead of acting superior
+                                      and treating us with contempt,
+                                      you should look at us
+                                      with affection.</p>
+                                    <p class="left">We’re all on the brink of despair,
+                                      all we can do
+                                      is look each other in the face,
+                                      keep each other company,
+                                      joke a little...
+                                      Don’t you agree?
+                                      Son of a bitch!
+                                      Egidio, old chap!
+                                      Bastard!
+                                      I haven’t seen you in 30 years!</p>
+                                    <p class="right">I need to talk to you.</p>
+                                    <p class="left">Later! I’m busy, can’t you see?</p>
+                                    <p class="right">Is this still your place?</p>
+                                    <p class="left">Luckily not, I sold it.
+                                      I’m still the manager though.
+                                      You’re famous! You’re always
+                                      in the gossip rags.
+                                      You’re at all the VIP parties,
+                                      always with a girl!
+                                      You never come here...
+                                      Get lost, will you?
+                                      We’re having a serious talk!</p>
+                                    <p class="right">Are you married?</p>
+                                    <p class="left">Married, divorced.</p>
+                                    <p class="right">I’ve got a daughter, Ramona.</p>
+                                    <p class="left">Did you have to call her Ramona?</p>
+                                    <p class="right">You artists are all the same!
+                                      I tell you I have a daughter
+                                      and you complain about her name!</p>
+                                    <p class="left">What’s wrong with «Ramona»?</p>
+                                    <p class="right">Nothing, it’s a name that implies
+                                      ambitions...</p>
+                                    <p class="left">There’s my daughter, you see?
+                                      She makes me so mad,
+                                      I’ve told her a million times!
+                                      You’re too old for this!
+                                      Now these hot young Polish girls
+                                      rule the scene.</p>
+                                    <p class="right">They’re experts at turning tricks.
+                                      She’s 42 and she wants to be
+                                      a sophisticated stripper.
+                                      But the world’s no longer
+                                      sophisticated. Right, Jep?</p>
+                                    <p class="left">I know, only you and I are.
+                                      That’s right, goddammit!
+                                      But she wants to keep doing
+                                      this job, for the money.</p>
+                                    <p class="right">I don’t know why
+                                      she always needs money
+                                      and what she fucking
+                                      does with it.</p>
+                                    <p class="left">For drugs? - I wish,
+                                      we’d have a common interest.
+                                      She doesn’t even drink beer.
+                                      I don’t know what she spends
+                                      her money on, she’s always broke.</p>
+                                    <p class="right">Do I seem like a loser?</p>
+                                    <p class="left">No, why?</p>
+                                    <img class="img-print O" src="img/18.jpg" />
+                                    <p class="right1">Because I can hear myself talk,
+                                      I sound like a loser.
+                                      I’m nearly 70 and I have to work
+                                      till 6 in the morning every day.
+                                      I swapped cocaine for heroin
+                                      15 years ago.
+                                      What an asshole!
+                                      A heroin junkie at 50!
+                                      Could I be more of a loser?
+                                      But I’m not important,
+                                      it’s her I worry about, I love her.
+                                      And I’m no loser there,
+                                      I’m a father.
+                                      And like all fathers, I’m worried.
+                                      What’ll she do in a few years?
+                                      She can’t be a stripper at 50!</p>
+                                    <p class="left">Why don’t you fix her up?</p>
+                                    <p class="right">Me?
+                                      Don’t you know any rich guys
+                                      who want a beautiful wife?
+                                      We could change her name,
+                                      that’s no problem.
+                                      You’d do me a big favour.</p>
+                                    <p class="left">I’m a writer, not a pimp.</p>
+                                    <p class="right">Sorry, I was a bit vulgar.
+                                      Daddy’s little girl, this is
+                                      my good friend, Jep Gambardella.
+                                      I’ll leave you to it,
+                                      I need the toilet.
+                                      Be right back!</p>
+                                    <p class="left">Hi, I’m Jep.</p>
+                                    <p class="right">Ramona.</p>
+                                    <p class="left">If you want a girl, get a Pole.</p>
+                                    <p class="right">Are you kidding?
+                                      Who wants a girl?
+                                      Not me.
+                                      I really am an old friend
+                                      of your father’s.</p>
+                                    <p class="left">Dad has no friends.</p>
+                                    <p class="right">He used to.</p>
+                                    <p class="left">When I came to Rome, I’d wait for
+                                      my friends to leave to come here.
+                                      Your father was a nice guy.
+                                      He taught me loads of things,
+                                      such as: vodka is uncouth.</p>
+                                    <p class="right">How useful!</p>
+                                    <p class="left">He asked me to find you a husband.
+                                      He’s obsessed.</p>
+                                    <p class="right">I’m not looking for a husband.
+                                      Well, you should be.</p>
+                                    <p class="left">A family’s a beautiful thing.</p>
+                                    <p class="right">I know.
+                                      But I’m not cut out
+                                      for beautiful things.
+                                      What’s wrong?</p>
+                                    <p class="left">I feel old.</p>
+                                    <p class="right">You’re no spring chicken.
+                                      One.</p>
+                                    <p class="left">How are you?</p>
+                                    <p class="right">Very well.
+                                      Just got back from India,
+                                      I had amazing dysentery.
+                                      Come to my divorce party,
+                                      I’ll have burlesque dancers there.
+                                      Of course.
+                                      What present would you like?
+                                      One big wish: for the wars
+                                      in the Middle East to end.</p>
+                                    <p class="left">I’ll do my best.</p>
+                                    <p class="right">Two.</p>
+                                    <p class="left">700 euros.</p>
+                                    <p class="right">Thank you.
+                                      Tell me, darling.
+                                      Perhaps...
+                                      I was thinking, my mouth...</p>
+                                    <p class="left">I’m scared, I’ve never
+                                      done it before, professor.
+                                      Don’t call me professor.
+                                      Call me «my friend» or «my love».
+                                      We all need love.
+                                      What star sign are you,
+                                      deeply intense lady?</p>
+                                    <p class="right">Aquarius.</p>
+                                    <p class="left">I knew it!
+                                      Want to go back 30 years, to when
+                                      it rained at the end of August?</p>
+                                    <p class="right">Done.</p>
+                                    <p class="left">That’s 700 euros.
+                                      Three.</p>
+                                    <p class="right">You’ve been to see Casagrande!</p>
+                                    <p class="left">No, I don’t even know him.
+                                      You betrayed me, darling!
+                                      We’re undergoing a journey,
+                                      and you’ve interrupted it.
+                                      This is the last time.
+                                      Go, go.
+                                      Bye then.</p>
+                                    <p class="right">Full price.</p>
+                                    <p class="left">Five.
+                                      1,200 euros.</p>
+                                    <p class="right">How’s your mom?</p>
+                                    <p class="left">She’s fine, thank you.</p>
+                                    <p class="right">Seven.</p>
+                                    <p class="left">700 euros.
+                                      Have you filled out, darling?
+                                      You’re always in my heart.
+                                      700 euros.</p>
+                                    <p class="right">As handsome as ever.
+                                      <p class="left">Ten.
+                                        <p class="right">You’re my pride.
+                                          <p class="left">Thanks.
+                                            Eleven.</p>
+                                          <p class="right">Professor, I’m here about
+                                            my hyperthyroidism.
+                                            Where does this undesired
+                                            perspiration happen?
+                                            On my hands.</p>
+                                          <p class="left">Pray for me, sister.</p>
+                                          <p class="right">You don’t need my prayers.
+                                            You don’t know how much of my income
+                                            I must surrender to the tax man.
+                                            Go, sister, go.
+                                            That’s 700, sister.
+                                            Fourteen.</p>
+                                          <p class="left">Spying on me?</p>
+                                          <p class="right">No, I was going to knock.</p>
+                                          <p class="left">When?</p>
+                                          <p class="right">When you were more relaxed.</p>
+                                          <p class="left">What brings you here?</p>
+                                          <p class="right">Nothing, I’m just curious.</p>
+                                          <p class="left">I told you what I think.</p>
+                                          <p class="right">I’ve no hidden agenda.
+                                            Do you think every guy
+                                            who comes near you wants sex?
+                                            Perhaps they just want to talk,
+                                            driven by simple
+                                            and harmless curiosity.</p>
+                                          <p class="left">That’s never happened to me.</p>
+                                          <p class="right">It has now.
+                                            Wouldn’t armbands be more
+                                            comfortable?</p>
+                                          <p class="left">Yes, but they irritate my armpits.
+                                            Any plans for lunch?</p>
+                                          <p class="right">I’m going to my mum’s with my dad.</p>
+                                          <p class="left">
+                                            <p class="left">So where’s the dog?</p>
+                                            <p class="right">What dog?</p>
+                                            <p class="left">People buy houses like this
+                                              so they can have dogs.</p>
+                                            <p class="right"> I had a Labrador, but 9 years ago
+                                              he got fed up and left me.
+                                              Labradors are dumb.
+                                              And Cooker Spaniels are dumb too.</p>
+                                            <p class="left">Hi, Jep.</p>
+                                            <p class="right">Hi, Antonello.</p>
+                                            <p class="left">You know Venditti?</p>
+                                            <p class="right">I know everyone.
+                                              It must be very satisfying
+                                              knowing so many people!</p>
+                                            <p class="left">You’re guaranteed to be unhappy.</p>
+                                            <p class="right">Have people let you down?
+                                              I’ve let them down.
+                                              Andrea! Are you with your mom?</p>
+                                            <p class="left">She’s parking.</p>
+                                            <p class="right">How are you?</p>
+                                            <p class="left">Not well.</p>
+                                            <p class="right">Proust says that death
+                                              may come to us this afternoon.</p>
+                                            <p class="left">Proust is scary.
+                                              Not tomorrow, not in a year,
+                                              but this afternoon.
+                                              But it’s evening already
+                                              so it’d be tomorrow afternoon.
+                                              Turgenev said: «Death looked at me,
+                                              noticing me.»</p>
+                                            <p class="right">Don’t take these writers
+                                              so seriously!</p>
+                                            <p class="left">Who should I take seriously then?</p>
+                                            <p class="right">Nothing, apart from the menu,
+                                              of course.
+                                              Things are too complicated to be
+                                              understood by one individual.
+                                              Just because you don’t understand
+                                              doesn’t mean nobody can.</p>
+                                            <p class="left">Your reply?
+                                              My reply?</p>
+                                            <p class="right">Jep!</p>
+                                            <p class="left">Hello, Viola.</p>
+                                          </p>
+                                          <p class="right">Good evening.</p>
+                                          <p class="left">Viola.
+                                            Darling, why don’t you
+                                            get a table for us?
+                                            How did you find him?</p>
+                                          <p class="right">He’s better.</p>
+                                          <p class="left">Good, very good.
+                                            He’s much better, I’m so happy!</p>
+                                          <p class="right">Dinner on Thursday?</p>
+                                          <p class="left">Of course!
+                                            On Thursday I’m inexplicably free.
+                                            Did you hear about Valentina Lemme?
+                                            She’s dating her personal trainer.
+                                            Really? It doesn’t show.</p>
+                                          <p class="right">I invited her anyway.</p>
+                                          <p class="left">Are you sure?
+                                            She’s nasty, you know.
+                                            She’s like the devil!
+                                            Really? You think so?
+                                            I see her at yoga twice a week.</p>
+                                          <p class="right">You’ll come?</p>
+                                          <p class="left">Of course.</p>
+                                          <p class="right">See you Thursday.</p>
+                                          <p class="left">Okay.
+                                            Goodbye.</p>
+                                          <p class="right">Watch that table carefully, but
+                                            don’t let them notice you looking.
+                                            Waiter? Champagne, please.</p>
+                                          <p class="left">Cristal.
+                                            You can’t imagine
+                                            how much one learns
+                                            by living alongside
+                                            a cluster of religious institutes.
+                                            So that was your first time?</p>
+                                          <p class="right">Yes, he didn’t think he’d been good,
+                                            too quick, he said.
+                                            So, out of anger or to let off
+                                            steam, I’m not sure which,
+                                            he got a football
+                                            and played with it furiously!
+                                            And you?</p>
+                                          <p class="left">I didn’t enjoy making love with him,
+                                            but seeing him with a football
+                                            was an unforgettable thing!</p>
+                                          <p class="right">He became really good,
+                                            he played on the national team.
+                                            Your dad said you spend everything
+                                            you earn.
+                                            What on? You can tell me.</p>
+                                          <p class="left">Maybe one day. But why didn’t you
+                                            write another book?</p>
+                                          <p class="right">Because I went out too much
+                                            at night.
+                                            Rome makes you waste a lot of time.
+                                            It’s distracting.
+                                            Writing requires focus and peace.
+                                            That’s not much of an answer.
+                                            You have plenty of peace here,
+                                            it’s like being in the country.</p>
+                                          <p class="left">I wrote in short spurts.
+                                            I was a sprint-style writer.
+                                            I told you about my first time...
+                                            but you’ve told me nothing.
+                                            It’s your turn now.</p>
+                                          <p class="right">On an island... one summer.
+                                            I was...
+                                            18, she was 20.
+                                            At the lighthouse, at night.
+                                            I went to kiss her,
+                                            she turned away.
+                                            I was disappointed.
+                                            But then she turned to look at me.
+                                            She brushed me with her lips...
+                                            she smelled of flowers.
+                                            I didn’t move,
+                                            I wasn’t able to move.
+                                            Then she took a step back...
+                                            and said...
+                                            She took a step back.
+                                            And said...
+                                            I’m going home, it’s late.
+                                            Want to come to a party
+                                            tomorrow night?</p>
+                                          <p class="left">Outstanding!
+                                            Did you want us to die tonight?
+                                            You won’t believe it,
+                                            but I love knife throwers.
+                                            A true likeness,
+                                            especially the hips.
+                                            A masterpiece, Geronimo.
+                                            It’ll look great on the mantelpiece.
+                                            God bless you, Jep!
+                                            This is Ramona.
+                                            What a unique and marvelous
+                                            creature.</p>
+                                          <p class="right">Is he taking the piss?</p>
+                                          <p class="left">It’s hard to know.
+                                            I was being honest.
+                                            I’m just sorry you missed
+                                            Geronimo D.</p>
+                                          <p class="right">What a tragedy!</p>
+                                          <p class="left">Come in, make yourselves at home.</p>
+                                          <p class="right">Who is that asshole?</p>
+                                          <p class="left">Lillo De Gregorio.
+                                            The greatest modern art collector
+                                            in this debauched country.</p>
+                                          <p class="right">What’s Jep’s floozy friend wearing?</p>
+                                          <p class="left">I don’t know.
+                                            Jep’s proving to be
+                                            a disappointment.</p>
+                                          <p class="right">Good evening, countess.</p>
+                                          <p class="left">Hello, you’re looking well.
+                                            I wish I could say that same
+                                            about the count. Hello, ladies!
+                                            Are you stupid?
+                                            You’re distracting my artist.
+                                            Dad, we’re having fun.
+                                            Carmelina, come and do some work.
+                                            Mom, I want to play here.</p>
+                                          <p class="right">Has this human being gone mad?</p>
+                                          <p class="left">We’ll sort it out.</p>
+                                          <p class="right">I’m not coming, I’m staying here.</p>
+                                          <p class="left">You don’t mean that.
+                                            Europe’s greatest gallery owners
+                                            are outside.</p>
+                                          <p class="right">If you show them what you can do
+                                            then ours will be a happy family.</p>
+                                          <p class="left">But I’m already happy,
+                                            I want to be a vet one day.
+                                            Get to bed, you two!
+                                            My kids are going to bed.
+                                            Come.</p>
+                                          <p class="right">I’ll go to bed too.
+                                            I’m a kid too.</p>
+                                          <p class="left">She blushes and says:
+                                            «Forgive me, I didn’t know
+                                            you loved me so much.
+                                            My ignorance is obscene.»</p>
+                                          <p class="right">He looks at her, reassuringly,
+                                            and says:
+                                            «Let me defend our love».</p>
+                                          <p class="left">How’s that for the start
+                                            of the second act?
+                                            You’ve written a pile of shit.
+                                            That girl was crying.
+                                            Nonsense!
+                                            That girl earns millions!
+                                            Excuse me a moment.</p>
+                                          <p class="right">Hi, Stefano.</p>
+                                          <p class="left">Hi.</p>
+                                          <p class="right">The catering’s gone downhill.</p>
+                                          <p class="left">Rome’s gone downhill.
+                                            Steeply downhill!
+                                            Do you have the case with you?</p>
+                                          <p class="right">I always do.</p>
+                                          <p class="left">You up for it?
+                                            See that?
+                                            Stefano has the keys to Rome’s
+                                            most beautiful buildings.</p>
+                                          <p class="right">Is he a doorman?</p>
+                                          <p class="left">No, he’s not a doorman.
+                                            He’s friends with princesses.</p>
+                                        </p>
+                                        <p class="right">Are you ready?
+                                          Come with me.</p>
+                                        <p class="left">Good evening, Princesses.</p>
+                                        <p class="right">Good evening.</p>
+                                      </p>
+                                      <p class="left">How come you have all these keys?</p>
+                                      <p class="right">Because...
+                                        I’m a trustworthy person.
+                                        Did you see? It looked huge,
+                                        but it’s tiny.</p>
+                                      <p class="left">Stay still, I’ll take a photo of you.
+                                        Don’t move.
+                                        That’s no good.
+                                        Laugh.
+                                        Got it?
+                                        Yes, that’s good.</p>
+                                      <p class="right">Many think that a funeral,
+                                        is a fortuitous event,
+                                        without any rules.</p>
+                                      <p class="left">That’s not true.
+                                        A funeral is a high-society event
+                                        par excellence.
+                                        You must never forget
+                                        that at a funeral
+                                        you are appearing on stage.</p>
+                                      <p class="right">Nice.</p>
+                                      <p class="left">Nice, but try the other one.
+                                        You must patiently wait
+                                        for the relatives to disperse.
+                                        Once you are sure
+                                        that all the guests are seated...
+                                        only at that point, may you offer
+                                        your condolences to the family.</p>
+                                      <p class="right">In this way, everyone will see you.
+                                        You take the mourner’s hands,
+                                        and rest yours on their arms.
+                                        You whisper something to them,
+                                        a comforting phrase,
+                                        said with authority.
+                                        For example:
+                                        «In the days to come,
+                                        when you feel the void,
+                                        I want you to know
+                                        that you can always count on me.»</p>
+                                      <p class="left">The public will ask...
+                                        «What’s Jep Gambardella saying?»</p>
+                                      <p class="right">This is definitely the right dress.
+                                        You’re allowed to retire
+                                        to a corner by yourself,
+                                        as if contemplating your sorrow.
+                                        However, another matter
+                                        must be approached with shrewdness.</p>
+                                      <p class="left">The chosen place needs
+                                        to be isolated
+                                        but clearly visible
+                                        to the public.</p>
+                                      <p class="right">Besides, a performance is good when
+                                        it is devoid of any superfluity.
+                                        So, the fundamental rule:
+                                        one must never cry at a funeral.</p>
+                                      <img class="img-print H" src="img/8.jpg" />
+                                      <p class="left">You must never steal the show
+                                        from the family’s sorrow.
+                                        That is forbidden.
+                                        Because it is immoral.
+                                        Viola.</p>
+                                      <p class="right">In the days to come,
+                                        when you feel the void,
+                                        you can always count on me.</p>
+                                      <p class="left">Now I ask Andrea’s friends
+                                        to come forward,
+                                        so that the coffin
+                                        may be carried outside.</p>
+                                      <p class="right">Your back!</p>
+                                      <p class="left">It was nice not making love.
+                                        It was nice loving each other.
+                                        I’d forgotten what loving someone
+                                        was about, I’d forgotten that.
+                                        I spend all my money to cure myself.</p>
+                                      <p class="right">Your breakfast.</p>
+                                      <p class="left">Come on, I’m taking you to see
+                                        a sea monster today.</p>
+                                      <p class="right">Your breakfast.</p>
+                                      <p class="left">Five more minutes.</p>
+                                      <p class="right">Can you see the sea?</p>
+                                      <p class="left">Where?</p>
+                                      <p class="right">On the ceiling.</p>
+                                      <p class="left">Yes, I can see it.</p>
+                                      <p class="right"> Who’s going to look after you now?</p>
+                                      <p class="left">I’m sorry about your daughter.
+                                        My condolences.</p>
+                                      <p class="right">I spent all my summers
+                                        making plans for September.
+                                        Not any longer.
+                                        Now I spend the summer
+                                        remembering the good intentions
+                                        which vanished.
+                                        In part because of laziness,
+                                        in part because of carelessness.</p>
+                                      <p class="left"> What’s wrong
+                                        with feeling nostalgic?</p>
+                                      <p class="right">It’s the only distraction left
+                                        for those
+                                        who’ve no faith
+                                        in the future!
+                                        Without rain...
+                                        August is coming to an end
+                                        and September isn’t arriving.
+                                        And I’m so ordinary!</p>
+                                      <p class="left">But there’s no need to worry.
+                                        It’s all right, it’s okay.</p>
+                                      <p class="right">Bravo!
+                                        Thank you.
+                                        What are you doing here?
+                                        Arturo!
+                                        Why are you here?</p>
+                                      <p class="left">Don’t you see?
+                                        I’m rehearsing my magic show.
+                                        This is tomorrow’s special number:
+                                        the vanishing giraffe.</p>
+                                      <p class="right">You can make this giraffe vanish?</p>
+                                      <p class="left">Of course I can make
+                                        the giraffe vanish!
+                                        Then make me vanish too.
+                                        Jep, do you think that if I could
+                                        really make people vanish
+                                        I’d still be here at my age
+                                        playing these circus games?</p>
+                                      <p class="right">It’s just a trick.
+                                        It’s just a trick!
+                                        Romano, how did it go?
+                                        Well, they clapped.
+                                        I’m glad.</p>
+                                      <p class="left">So why are you so sad?</p>
+                                      <p class="right">I’m not sad.</p>
+                                      <p class="left">What’s with the giraffe?</p>
+                                      <p class="right">For a magic show.</p>
+                                      <p class="left">I’ll come and see you tomorrow.</p>
+                                      <p class="right">I’m not doing the show tomorrow.</p>
+                                      <p class="left">Why not? You said it went well.</p>
+                                      <p class="right">I’m leaving, I’m going back
+                                        to my home town, for good.
+                                        I won’t even pack up my things,
+                                        I’ll leave it all.
+                                        I’ve lived in this city
+                                        for 40 years.
+                                        And in the end I thought...
+                                        the only person
+                                        who deserved a goodbye
+                                        was you.</p>
+                                      <p class="left">So you’re leaving?</p>
+                                      <p class="right">Romano... why are you leaving?</p>
+                                      <p class="left">Rome has really disappointed me.</p>
+                                      <p class="right">Bye, Jep.</p>
+                                      <p class="left">See?</p>
+                                      <p class="right">Want some coffee?</p>
+                                      <p class="left">No, thanks. I know you’re busy.
+                                        I need to ask you something.</p>
+                                      <p class="right">Go ahead.</p>
+                                      <p class="left">Why did Elisa leave me?</p>
+                                      <img class="img-print I" src="img/9.jpg" />
+                                      <p class="right1">I don’t know.</p>
+                                      <p class="left">Didn’t she say anything about it
+                                        in her diary?</p>
+                                      <p class="right">No, I don’t think so.</p>
+                                      <p class="left">Would you be offended
+                                        if I asked to read it?</p>
+                                      <p class="right">No, I wouldn’t.
+                                        In fact, I’d understand.
+                                        But I’m afraid I can’t
+                                        let you read it.</p>
+                                      <p class="left">Why not?</p>
+                                      <p class="right">Because a few days after the
+                                        funeral, I threw it away.
+                                        May I introduce you
+                                        to my girlfriend?</p>
+                                      <p class="left">Hello, my name’s Polina.
+                                        Like Polina in «The Gambler»
+                                        by Dostoyevsky.</p>
+                                      <p class="right">What are you doing tonight?</p>
+                                      <p class="left">Nothing.</p>
+                                      <p class="right">Polina’s going to finish ironing...
+                                        then we’ll drink a glass
+                                        of red wine.</p>
+                                      <p class="left">We’ll watch some television
+                                        and go to bed.</p>
+                                      <p class="right">What about you?</p>
+                                      <p class="left">I’ll have a lot of drinks, but not
+                                        so many as to become unruly.
+                                        And then...
+                                        when you’ll be getting up
+                                        I’ll be going to bed.</p>
+                                      <p class="right">What lovely people you are!
+                                        I love doing the train!</p>
+                                      <p class="left">I’ll screw you.
+                                        «Who am I?»
+                                        That’s how
+                                        one of Breton’s novels began.
+                                        And of course in the book
+                                        there’s no reply.</p>
+                                      <p class="right"> Did you hear about Viola?</p>
+                                      <p class="left">What?
+                                        She’s donating everything
+                                        to the church.
+                                        She works in the parish
+                                        and is going to volunteer in Africa.
+                                        The trains at our parties
+                                        are the best ones in Rome!</p>
+                                      <p class="right">You think so?</p>
+                                      <p class="left">I do.
+                                        They’re the best because
+                                        they go nowhere.</p>
+                                      <p class="right">Well?</p>
+                                      <p class="left">It’s wonderful, thank you.</p>
+                                      <p class="right">Come on, it’s all gone.</p>
+                                      <p class="left">Tell me why you left me, please.</p>
+                                      <p class="right"> I want an explanation, please!</p>
+                                      <p class="left">Go away!</p>
+                                      <p class="right">Get out! Get out!</p>
+                                      <p class="left">You see all these people?
+                                        They can’t do anything.
+                                        But I know how to do something.</p>
+                                      <p class="right">We know how to do something.</p>
+                                      <p class="left">How sweet!
+                                        They’ve been asking me for years
+                                        why I don’t write another novel.
+                                        But look at these people.
+                                        This Wildlife!
+                                        This is my life
+                                        and it’s nothing.
+                                        Flaubert wanted to write a book
+                                        about nothing but he failed,
+                                        so could I do it?</p>
+                                      <p class="right">It’s nice.</p>
+                                      <p class="left">Thanks, rascal.</p>
+                                      <p class="right">What inspired this exhibition?</p>
+                                      <p class="left">It wasn’t my idea
+                                        to do this photo exhibition.
+                                        It was my father’s idea.
+                                        When I was born, he starting taking
+                                        photos of me, every day.
+                                        One photo per day.
+                                        He never forgot, not even once.
+                                        From the age of 14 upwards,
+                                        I continued.
+                                        I photographed myself every day.
+                                        Go ahead.</p>
+                                      <p class="right">Cardinal!</p>
+                                      <p class="left">Your Eminence!
+                                        Cardinal,
+                                        when will The Saint arrive in Rome?
+                                        On Thursday,
+                                        but please don’t call her The Saint.
+                                        She is a Saint but not technically.
+                                        Tell me something,
+                                        who is that cardinal?</p>
+                                      <p class="right">That’s Bellucci.</p>
+                                      <p class="left">Bellucci?</p>
+                                      <p class="right">The one in line to be...</p>
+                                      <p class="left">Exactly.
+                                        The papal throne awaits him.
+                                        I met him at Giada Ricci’s
+                                        carnival party.
+                                        Rumour has it that he used to be
+                                        Europe’s best exorcist.</p>
+                                      <p class="right">Are you pulling my leg?</p>
+                                      <p class="left">No.
+                                        I never joke about the devil.
+                                        Do you know I’m very, very bored.
+                                        We’re having a great, great time.
+                                        You cut up the duck.
+                                        Cook it on a high flame
+                                        for 15 minutes.
+                                        At that point...
+                                        Cardinal, do you remember me?</p>
+                                      <p class="right">Lello Cava.
+                                        We met at Giada Ricci’s party.
+                                        I was dressed as an escort.
+                                        Come, they’re starting
+                                        to serve lunch.
+                                        I’d like you meet my writer friend,
+                                        Jep Gambardella.
+                                        A writer!
+                                        This country needs writers.
+                                        Actually I thought it was more
+                                        in need of priests.
+                                        Help.</p>
+                                      <p class="left">May I ask you a question?</p>
+                                      <p class="right">Of course, my dear man.
+                                        Well, for some time now...
+                                        from a spiritual point of view...</p>
+                                      <p class="left">Skunk hunt?</p>
+                                      <p class="right">Of course, I’ll lead the way!
+                                        I know the Tebaldi grounds well.
+                                        Jep Gambardella, the king
+                                        of socialites! You’re losing it.
+                                        I’ve been losing it for 40 years.
+                                        It’s a steady decline.
+                                        Tell me something, Stefania.
+                                        Have we ever slept with each other?</p>
+                                      <p class="left">Of course not!</p>
+                                      <p class="right">That’s an awfully big mistake!
+                                        We must make amends, immediately.</p>
+                                      <p class="left">Idiot.</p>
+                                      <p class="right">Thank goodness.
+                                        We still have something nice
+                                        to do together.</p>
+                                      <p class="left">The future is marvelous, Stefania.</p>
+                                      <p class="right">To be honest, Catellani
+                                        hasn’t had many brushed fabrics
+                                        in recent years.</p>
+                                      <p class="left">In my opinion, Rebecchi’s still
+                                        the best tailor in Rome.</p>
+                                      <p class="right">Who are you?</p>
+                                      <p class="left">A hard-working man.
+                                        One who, while you play the artist
+                                        and have fun with your friends,
+                                        keeps this country going.</p>
+                                      <p class="right">I keep this country going,
+                                        but many people
+                                        haven’t understood that yet.
+                                        Imagine that, Dadina,
+                                        Giulio Moneta was my neighbour.
+                                        One of the world’s 10 most wanted
+                                        men and I never noticed.</p>
+                                      <p class="left">You’ve changed,
+                                        you’re always thinking.</p>
+                                      <p class="right">Maybe I should do what Romano did.
+                                        I’m not fit for this life
+                                        or this city.
+                                        Nobody’s fit for shit, dammit.
+                                        Take it from the queen of misfits.
+                                        Everything around me is dying.
+                                        People who are younger than me,
+                                        things...
+                                        All before my eyes and I...
+                                        And you’re suffering.
+                                        And you don’t understand.</p>
+                                      <p class="left">How’s the soup, Little Jep?</p>
+                                      <p class="right">The soup’s good.
+                                        Why did you call me Little Jep? No
+                                        one’s called me that for centuries.</p>
+                                      <p class="left">Because a friend,
+                                        every now and again,
+                                        needs to make their friend
+                                        feel like they did as a child.</p>
+                                      <p class="right">How can I make you feel
+                                        like a little girl?</p>
+                                      <p class="left">You don’t need to, I feel
+                                        like a little girl every day!
+                                        I’ve seen the world from
+                                        their viewpoint for 60 years.
+                                        You know Sister Maria,
+                                        the missionary,
+                                        the one they call the Saint?
+                                        Yes, she’s coming to Rome
+                                        to receive some honour.
+                                        Exactly. In all her life,
+                                        she’s only given three interviews.</p>
+                                      <p class="right">Yours will be memorable.</p>
+                                      <p class="left">Yeah sure, think of Giulio Moneta!
+                                        This is different.
+                                        She studied in Italy
+                                        and speaks Italian.
+                                        She read your book and loved it.
+                                        She wants to meet you
+                                        so I organized a dinner party
+                                        at your house tomorrow.</p>
+                                      <p class="right">Did I do well?</p>
+                                      <p class="left">You did very well.
+                                        Tomorrow I’ll have the honour
+                                        of dining with her.</p>
+                                      <p class="right">At the Holy Father’s?</p>
+                                      <p class="left">No.</p>
+                                      <p class="right">No, at Jep Gambardella’s.
+                                        You see, the Pope even invited
+                                        the enclosed nuns.</p>
+                                      <p class="left">Sisters, sisters, sisters!</p>
+                                      <p class="right">Sisters, sisters...</p>
+                                      <p class="left">Yes, perfect!</p>
+                                      <p class="right">Ah, the Red Cross nurses!
+                                        Well-toned!
+                                        Okay, great...
+                                        What handsome young men!
+                                        Great!
+                                        Let’s go!
+                                        The Saint’s assistant called me.
+                                        The Saint would like Count and
+                                        Countess Odescalchi to come too,
+                                        as they treated her like a sister
+                                        when she lived in Italy.</p>
+                                      <p class="left">Do you know them?</p>
+                                      <p class="right">Of course,
+                                        but they are not in Rome.
+                                        All the nobles are in London,
+                                        at Philip’s great-niece’s wedding.
+                                        Let’s call the Colonnas of Reggio.
+                                        The nobles for hire?
+                                        They’re dead.
+                                        Nonsense, they’re immortal.
+                                        The Saint won’t even notice,
+                                        70 years have gone by!
+                                        This piece of furniture
+                                        looks great...</p>
+                                      <p class="left">Who would’ve thought!</p>
+                                      <p class="right">It looks great, like a new bathroom!
+                                        Count Colonna speaking.
+                                        Yes, we are available.
+                                        For tonight.
+                                        Our rate is 250 euros per person
+                                        for the evening.
+                                        Plus the cost of the car hire.</p>
+                                      <p class="left">This would be somewhat
+                                        humiliating for us...
+                                        We are willing to be hired
+                                        as the Colonnas of Reggio.
+                                        But as for pretending to be
+                                        the Odescalchis...
+                                        I don’t know...
+                                        We were at war for two centuries.
+                                        I feel it’s immoral.
+                                        Cut at least twelve pieces
+                                        of rabbit!
+                                        Set aside the kidneys, liver,
+                                        head.
+                                        Gently brown.
+                                        Don’t forget thyme,
+                                        laurel leaves, rosemary...
+                                        Then red wine, Ligurian olives...
+                                        pine nuts.
+                                        And after an hour,
+                                        you have Ligurian-style rabbit!</p>
+                                      <p class="right">Sister Maria, what convent
+                                        are you staying at?</p>
+                                      <p class="left">Actually, we’re at the Hassler Hotel
+                                        at the Spanish Steps.
+                                        To be honest, Sister Maria
+                                        finds it uncomfortable.
+                                        Never heard the Hassler
+                                        described as uncomfortable!
+                                        It’s very comfortable
+                                        but Sister Maria isn’t used
+                                        to sleeping in a bed.
+                                        She sleeps on the floor,
+                                        in a cardboard bed.
+                                        Do you have any visits planned?
+                                        Sister Maria will climb
+                                        St John’s Basilica’s Scala Sancta
+                                        on her knees.</p>
+                                      <p class="right">Have you?</p>
+                                      <p class="left">I’d have liked to, but...
+                                        I have a bad knee...
+                                        Orthopedic problems
+                                        are unimportant,
+                                        compared to the partial indulgence
+                                        granted by the Scala Sancta.
+                                        That’s true! Another specialty
+                                        of mine is lamb with...</p>
+                                      <p class="right">Does Sister Maria still help
+                                        the sick?</p>
+                                      <p class="left">22 hours a day, every day.
+                                        She washes them, feeds them...
+                                        You ought to see her.
+                                        Despite her age,
+                                        she doesn’t walk, she runs.
+                                        Now she’s tired, but that’s because
+                                        she’s not with her patients.
+                                        How old is she?</p>
+                                      <p class="right">She’ll be 104 in October.</p>
+                                      <p class="left">That’s impressive.</p>
+                                      <p class="right">I thought she was older!
+                                        Longevity too, like all things,
+                                        is not accidental.
+                                        About Sister Maria’s interview
+                                        with Jep...</p>
+                                      <p class="left">Her interview?
+                                        There must be a mix-up...
+                                        Sister Maria hasn’t given
+                                        any interviews since 1971,
+                                        after the reason
+                                        for her mission in Chad,
+                                        was misunderstood by some.
+                                        <p class="right">Of course, but considering
+                                          her admiration for Jep’s work...</p>
+                                        <p class="left">You told me she enjoyed
+                                          «The Human Apparatus».</p>
+                                        <p class="right">She found it beautiful and fierce.
+                                          Like the world of men.</p>
+                                        <p class="left">Great! There would be no risk
+                                          of any misunderstanding,
+                                          Sister Maria can review the text...</p>
+                                        <p class="right">No, I’m sorry.
+                                          <p class="left">Don’t insist.
+                                            I don’t wish to raise
+                                            any false hopes,
+                                            there’s absolutely
+                                            no question of any interview.
+                                            Sorry, but why do
+                                            you always answer?
+                                            Why not let Sister Maria talk?
+                                            Madam...
+                                            I took a vow of poverty.
+                                            And you can’t talk about poverty...
+                                            you have to live it.
+                                            Such true and real words!
+                                            Powerful words!
+                                            Do you need anything, madam?</p>
+                                          <p class="right">She needs the bathroom.</p>
+                                          <p class="left">It’s on the left.
+                                            The change of diet
+                                            isn’t good for her.
+                                            Sister Maria, in Mali, only eats
+                                            40 grams of plant roots a day.
+                                            Me too sometimes, in the evening,
+                                            as a light meal,
+                                            <p class="right">I have some splendid
+                                              roots with lemon.</p>
+                                            <img class="img-print M" src="img/14.jpg" />
+                                            <p class="left1">You clean the roots
+                                              by scraping them with a knife
+                                              and you cut them into small
+                                              chunks.</p>
+                                            <p class="right">Cardinal, remember when we met
+                                              at that wedding?
+                                              You were there too...
+                                              I felt the need to ask you
+                                              about matters close to my heart.</p>
+                                            <p class="left">Matters regarding faith...
+                                              regarding the strength
+                                              of spirituality...
+                                              But then you got distracted.
+                                              You can ask me now.</p>
+                                            <p class="right">No, I don’t see the point.</p>
+                                            <p class="left">Why?
+                                              I’d be very disappointed to discover
+                                              that you have no answers.
+                                              I’m only saying
+                                              it’s a possibility...
+                                              I think that...
+                                              Never mind...
+                                              I apologize for earlier.
+                                              There is one question
+                                              I really want to ask you.
+                                              Are the rumors about you true?
+                                              That you were a truly great...
+                                              exorcist?
+                                              Sister Maria...
+                                              Sister Maria!</p>
+                                            <p class="right">Sister Maria!</p>
+                                            <p class="left">Saint...</p>
+                                            <p class="right">Have you seen her?</p>
+                                            <p class="left">No, she’s not there.</p>
+                                            <p class="right">Sister Maria!</p>
+                                            <p class="left">Saint...</p>
+                                            <p class="right">Sister Maria!</p>
+                                            <p class="left">Saint!</p>
+                                            <p class="right">She’s called Sister Maria.</p>
+                                            <p class="left">Sister Maria...
+                                              Where has that bitch got to?
+                                              Sister Maria!
+                                              Sister Maria!
+                                              My goodness!
+                                              My goodness!</p>
+                                            <p class="right">Come, Elisabetta, let’s go to bed.</p>
+                                            <p class="left">You go ahead, I’m going upstairs
+                                              for a moment.</p>
+                                            <p class="right">Don’t be late.
+                                              In this room, in 1930,
+                                              Princess Antonietta gave birth
+                                              to her only daughter,
+                                              Elisabetta Colonna of Reggio.
+                                              The princess died
+                                              after giving birth.
+                                              Young Elisabetta,
+                                              in these opulent rooms,
+                                              had a happy and carefree
+                                              childhood.
+                                              But shortly after, the financial
+                                              hardship endured by Prince Erminio,
+                                              forced him to sell the property.
+                                              They’re migrating west...
+                                              but now they are resting.
+                                              Did you know
+                                              that I know the Christian names...
+                                              of all of these birds?</p>
+                                            <p class="left">Why...
+                                              did you never write another book?</p>
+                                            <p class="right">I was looking for the great beauty,
+                                              but...
+                                              I didn’t find it.</p>
+                                            <p class="left">Do you know...
+                                              Why...
+                                              I only eat roots?</p>
+                                            <p class="right">No, why?
+                                              Because roots are important.
+                                              Now there’s something
+                                              I want to show you.</p>
+    </div>
+    <br>
+    <p class="left1">This is how it always ends.
+      With death.
+      But first there was life.
+      Hidden beneath the blah, blah, blah.
+      It is all settled beneath
+      the chitter chatter and the noise.
+      Silence and sentiment.
+      Emotion and fear.
+      The haggard, inconstant
+      flashes of beauty.
+      And then the wretched squalor
+      and miserable humanity.
+      All buried under the cover of the
+      embarrassment of being in the world.
+      Beyond there is what lies beyond.
+      I don’t deal
+      with what lies beyond.
+      Therefore...
+      let this novel begin.
+      After all... it’s just a trick.
+      Yes, it’s just a trick.</p>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+  function LA_GRANDE_BELLEZZA() {
+    window.print();
+  }
+</script>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+  function THE_GREAT_BEAUTY() {
+    window.print();
+  }
+</script>
+
+</html>
