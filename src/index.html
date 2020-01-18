@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Printer</title>
+  </head>
+  <body>
+    <div class="options">
+      <label>Path</label>
+      <input type="text" id="path" />
+      <button id="submit">Get</button>
+    </div>
+    <div id="info"></div>
+    <embed src="output/temp.pdf" type="application/pdf" />
+    <script type="module">
+      const path = document.querySelector("#path");
+      const submit = document.querySelector("#submit");
+
+      path.setAttribute("value", localStorage.getItem("value"));
+      submit.addEventListener("click", () => {
+        window.deskgap.messageUI.send("click", path.value);
+        localStorage.setItem("value", path.value);
+      });
+
+      if (path.value) {
+        window.deskgap.messageUI.send("setup", path.value);
+      }
+      window.deskgap.messageUI.on("error", (_, err) => {
+        console.error(err);
+        document.querySelector("#info").innerHTML =`<div>${err}</div>`;
+      });
+    </script>
+  </body>
+</html>

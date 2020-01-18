@@ -1,38 +1,66 @@
 const path = require("path");
-const carlo = require("carlo");
+const fetch = require("node-fetch");
+const fs = require("fs");
+const puppeteer = require("puppeteer");
 const chokidar = require("chokidar");
+const { app, messageNode, BrowserWindow } = require("deskgap");
+console.log("lol")
 
-(async () => {
-  const app = await carlo.launch({
-    width: 500
+const isRemoteHTML = url => {
+  return fetch(url, { method: "HEAD" })
+    .then(response =>
+      response.headers.get("content-type").includes("text/html")
+    )
+    .catch(_ => false);
+};
+
+const render = async url => {
+  console.log("init");
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  const output = `output/temp.pdf`;
+  console.log("ongoing");
+  await page.goto(url, { timeout: 10000, waitFor: "domcontentloaded" });
+  await page.pdf({ path: path.join(__dirname, output), printBackground: true });
+  await browser.close();
+  console.log("done");
+};
+
+let watcher;
+const setup = async (url, win) => {
+  if (
+    (fs.existsSync(url) && path.extname(url) === ".html") ||
+    (await isRemoteHTML(url))
+  ) {
+    const pipeline = () =>
+      render(fs.existsSync(url) ? `file:${url}` : url)
+        .then(_ => {
+          win.webContents.reload();
+          win.show();
+        })
+        .catch(err => {
+          console.error(err);
+          win.webContents.send("error", err);
+        });
+
+    if (watcher) watcher.close();
+    watcher = chokidar
+      .watch(url, { ignored: /(^|[\/\\])\../ })
+      .on("change", pipeline);
+    pipeline();
+  } else {
+    const err = `Wrong URL, must be a valid HTML file. (${url})`;
+    console.error(err);
+    return win.webContents.send("error", err);
+  }
+};
+
+app.once("ready", () => {
+  const win = new BrowserWindow({
+    width: 500,
+    height: 800
   });
-  app.on("exit", () => process.exit());
-  app.serveFolder(path.join(__dirname, "www"));
-
-  carlo.enterTestMode();
-  const pdfApp = await carlo.launch();
-
-  const render = async () => {
-    await pdfApp.load("index.html");
-    const page = pdfApp.mainWindow().pageForTest();
-    await page.pdf({
-      format: "A4",
-      printBackground: true,
-      path: path.join(__dirname, "www", "output", "temp.pdf")
-    });
-    await app.mainWindow().evaluate(() => {
-      const embed = document.querySelector("#pdf");
-      embed.src = "output/temp.pdf";
-    });
-    app.mainWindow().bringToFront();
-  };
-
-  app.exposeFunction("render", render);
-  app.exposeFunction("set", result => {
-    const folderpath = JSON.parse(result).args[0];
-    pdfApp.serveFolder(folderpath);
-    chokidar.watch(folderpath).on("change", render);
-    render();
-  });
-  await app.load("index.html");
-})();
+  win.loadFile("src/index.html");
+  messageNode.on("click", (_, url) => setup(url, win));
+  messageNode.once("setup", (_, url) => setup(url, win));
+});

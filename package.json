@@ -1,10 +1,20 @@
 {
-  "name": "preview-print",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "printer",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "deskgap .",
+    "build": "sh src/build.sh"
+  },
+  "pkg": {
+    "scripts": "node_modules/puppeteer/lib/*.js"
+  },
   "license": "MIT",
   "dependencies": {
-    "carlo": "^0.9.46",
-    "chokidar": "^3.3.1"
+    "chokidar": "^3.3.1",
+    "deskgap": "^0.2.0",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^2.0.0"
   }
 }
