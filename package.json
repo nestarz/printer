@@ -4,11 +4,7 @@
   "main": "src/index.js",
   "bin": "src/index.js",
   "scripts": {
-    "start": "deskgap .",
-    "build": "sh src/build.sh"
-  },
-  "pkg": {
-    "scripts": "node_modules/puppeteer/lib/*.js"
+    "start": "deskgap ."
   },
   "license": "MIT",
   "dependencies": {

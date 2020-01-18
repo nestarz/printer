@@ -4,7 +4,6 @@ const fs = require("fs");
 const puppeteer = require("puppeteer");
 const chokidar = require("chokidar");
 const { app, messageNode, BrowserWindow } = require("deskgap");
-console.log("lol")
 
 const isRemoteHTML = url => {
   return fetch(url, { method: "HEAD" })
@@ -18,7 +17,7 @@ const render = async url => {
   console.log("init");
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  const output = `output/temp.pdf`;
+  const output = `temp.pdf`;
   console.log("ongoing");
   await page.goto(url, { timeout: 10000, waitFor: "domcontentloaded" });
   await page.pdf({ path: path.join(__dirname, output), printBackground: true });
