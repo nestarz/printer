@@ -4,6 +4,9 @@ const fs = require("fs");
 const puppeteer = require("puppeteer");
 const chokidar = require("chokidar");
 const { app, messageNode, BrowserWindow } = require("deskgap");
+const express = require("express");
+const serve_app = express();
+serve_app.listen(4200);
 
 const isRemoteHTML = url => {
   return fetch(url, { method: "HEAD" })
@@ -19,20 +22,27 @@ const render = async url => {
   const page = await browser.newPage();
   const output = `temp.pdf`;
   console.log("ongoing");
-  await page.goto(url, { timeout: 10000, waitFor: "domcontentloaded" });
-  await page.pdf({ path: path.join(__dirname, output), printBackground: true });
+  await page.emulateMedia("print");
+  await page.goto(url, { timeout: 0, waitFor: "networkidle2" });
+  await page.pdf({
+    path: path.join(__dirname, output),
+    printBackground: true,
+    preferCSSPageSize: true
+  });
   await browser.close();
   console.log("done");
 };
 
 let watcher;
 const setup = async (url, win) => {
-  if (
-    (fs.existsSync(url) && path.extname(url) === ".html") ||
-    (await isRemoteHTML(url))
-  ) {
+  const local = fs.existsSync(url) && path.extname(url) === ".html";
+  const remote = await isRemoteHTML(url);
+  if (local || remote) {
+    if (local) {
+      serve_app.use(express.static(path.dirname(url)));
+    }
     const pipeline = () =>
-      render(fs.existsSync(url) ? `file:${url}` : url)
+      render(fs.existsSync(url) ? `http://localhost:4200/` : url)
         .then(_ => {
           win.webContents.reload();
           win.show();

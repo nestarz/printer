@@ -10,7 +10,7 @@ Preview print version of websites and watch for changes
 
 ```
 yarn install
-yarn start
+yarn start & disown
 ```
 
 The viewer support local and remote url files.
