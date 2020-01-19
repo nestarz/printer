@@ -35,27 +35,27 @@ const render = async url => {
 
 let watcher;
 const setup = async (url, win) => {
+  if (watcher) watcher.close();
   const local = fs.existsSync(url) && path.extname(url) === ".html";
-  const remote = await isRemoteHTML(url);
-  if (local || remote) {
-    if (local) {
-      serve_app.use(express.static(path.dirname(url)));
-    }
-    const pipeline = () =>
-      render(fs.existsSync(url) ? `http://localhost:4200/` : url)
-        .then(_ => {
-          win.webContents.reload();
-          win.show();
-        })
-        .catch(err => {
-          console.error(err);
-          win.webContents.send("error", err);
-        });
+  const pipeline = () =>
+    render(local ? `http://localhost:4200/` : url)
+      .then(_ => {
+        win.webContents.reload();
+        win.show();
+      })
+      .catch(err => {
+        console.error(err);
+        win.webContents.send("error", err);
+      });
 
-    if (watcher) watcher.close();
+  if (local) {
+    serve_app.use(express.static(path.dirname(url)));
     watcher = chokidar
-      .watch(url, { ignored: /(^|[\/\\])\../ })
+      .watch(path.dirname(url), { ignored: /(^|[\/\\])\../ })
       .on("change", pipeline);
+  }
+
+  if (local || (await isRemoteHTML(url))) {
     pipeline();
   } else {
     const err = `Wrong URL, must be a valid HTML file. (${url})`;
